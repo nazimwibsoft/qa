@@ -1,0 +1,185 @@
+Different brackets:
+===============================================================
+- () Parenthese, round brackets
+- {} Braces, Curly brackets
+- [] Squar brackers, box brackets
+- <> angle brackets
+
+Lists, Tuples and Sets:
+===============================================================
+- Used to store multiple values in a single variable
+- List is defined using square brackets, separated by comma
+- Tuple is defined using round brackets, separated by comma
+- Set is defined using curly brackets, separated by comma
+- Tuple we cannot add or remove elements later or modify element, whereas in List we can
+- Set we can add or remove elements, but we can not add dupliate element
+- List and Tuple keep the order of items in which added
+- Set does not guarentee order of items in it
+- List and tuple elements can be access using subscript notation a square bracket using index
+- In set we dont have any order, cannot use subscript notation with sets
+- Set allow to take difference of two sets and return element that are not in both sets
+
+
+Problem:
+We have two sets, one of local friends and one of abroad:
+
+local_friends = {"Bob", "Rolf", "Anne"}
+abroad_friends = {"Jen", "Adam", "Rolf", "Bob"}
+
+How to get set of friends not in abroad set?
+Answer: using difference method
+
+How to get list of friends common in both sets?
+Answer: using intersect method
+
+How to get set of all friends?
+Answer: using union method
+ 
+Booleans:
+===============================================================
+- boolean created in result of a comparision operation
+- comparing two sets with same elements will return true
+
+Comparision (is) vs (==):
+===============================================================
+- "is" two elements are the same thing not having same value only
+- whereas equal operator compare if elements have same value
+
+(in) Keyword
+===============================================================
+- used to check if an element is inside a list or tuple
+- works with string, list, tuple and sets
+
+List Comprehensions
+===============================================================
+[x for x in items if x > 0]
+- first the element to be added, then the in statement and condition in the last
+- allows to create new list form existing lists
+- one line iteration using in of elements in one list and putting that in other
+- this is a alternate to a for loop where we will have to use append method
+
+id() method
+===============================================================
+- returns address of an element in memory
+
+Dictionaries
+===============================================================
+- Structure allow to interact with data using keys
+- Key / Value structure to store data
+- Defined using curly brackers, with key / value pair separated by comma
+- Colon (:) is used as separator between key and value with key on left
+- Keys will be in quotes and string values in quotes
+- Dict represent on object, a Dict can have another Dict in it as well
+- We cam also have a list of Dict objects
+- Value of object in a Dict can be get using Key
+- We can check if Key in Dict using (in)
+- .values() method can be used to list of values
+- .items() method to get each key/value pair
+
+Destructuring Variables
+===============================================================
+- Assigning a tuple to multiple variables
+- Python automatically assign each value in tuple to respsective variable
+- example x, y  = (5, 10) will assign 5 to x and 10 to y
+- ValueError: not enough values to unpack, can happen if number of values in tuple different to variables
+- (_) underscore variable name is ignored in Python, so can be used in destructuring
+- Like: x, _, y = (5,3,10), this will ignore 3 and only assign value to x and y
+- * can used to get first value in first variable and remaining in second variable
+- *head, tail = [1,2,3,4,5], this will set head = [1,2,3,4] and tail = 5
+- head, *tail = [1,2,3,4,5], this will set header = 1 and tail = [2,3,4,5]
+
+Functions
+===============================================================
+- def keyword is used to declare a function
+- indentation is used to define scope of function
+- round brackets are used with name of function
+- inside round brackets we define the variables
+- function cannot be used before defining them
+- A variable outside function scope cannot be used in a function before defining that
+- Cannot assign and reference an out of scope variable in a function in single line
+- arguments and parameters, and default parameter values
+- parameters are variables while defining a function
+- arguments are values passed while calling that function
+- default parameter will have a default value while defining a function
+
+
+input() method
+===============================================================
+- used in console based python apps / scripts
+- can be used to take input from user on console
+
+Lamda functions
+===============================================================
+- function without name that return some value
+- simple operation and return value
+- lamda x,y: x+y
+- no need to specify return, as it returns a value always
+- z = (lamda x,y: x+y)(5,7)
+- used in same line where defined
+
+map() function
+===============================================================
+- map function takes a list and applys a function on it
+- items = [1,2,3]
+doubled = map(double, items)
+where double is a function defined to take argument
+- map can be used with a lambda as well
+doubled = map(lamda x: x*2, items)
+
+Dictionary Comprehension
+===============================================================
+- if we have a list of tuples
+- we can create a dictionary using comprehension
+- using a key value in a tuple as key and tuple as value
+
+Unpacking named arguments
+===============================================================
+- a parameter with (*) creates a unpacking argument
+- a parameter that can take multiple arguments on a function call
+- like multiply(*args) can be called like multiply(2,3,5)
+- so above can iterate through args and multiply these and return value 30
+- we can destructure argument into multiple parameters as well
+- so a function add(a,b) can be called like add(*nums) where nums is a list
+- so in above we used a (*) with parameter while calling function
+
+Unpacking keyword arguments
+===============================================================
+- with parameter (**) creates a keyword argument
+- we can unpack dictionary into named arguments using (*)
+- we can unpack dictionary into keyword arguments using (**)
+
+Inheritance and Composition:
+===============================================================
+- device and printer is an example of inheritance
+- composition is class that uses other class without inheritance
+- bookshelf and book is an example of composition
+
+Type Hinting
+===============================================================
+- variable type mentioned with variable name to tell its type
+- like items: list
+- this we can in function parameters, to tell type of each parameter
+- similarly we can set the return type
+- def sum(values: list[float]) -> float
+
+Imports in Python
+===============================================================
+- importing python files into another file
+- importing pip packages in a python script file
+- importing with relative path to current python script
+
+First Class functions
+===============================================================
+- functions can be passed as arguments
+
+Decorators
+===============================================================
+- at used to add decorator functions on a function
+- functions called before execution of this function
+
+Mutability in Python
+===============================================================
+- like List, set are mutable, can be changed
+- tuple, strings, int, boolean are immutable
+- not to use default value for mutable types
+- mutable have same identifier in memory and does not change

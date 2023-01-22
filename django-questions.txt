@@ -1,0 +1,25 @@
+1. What django session engies are available? and what is the default engine for sessions?
+Ans: database based, file based, cookie based, and cached (Memcached or Redis cache)
+
+2. Explain Django request cycle?
+Ans: django server recieves a request, match URL pattern, if match found executes associated view function and sends response back else send 404 back.
+
+3. Does Django support multiple-column primary keys?
+Ans: Django does not support multiple-column primary keys. It only supports single-column primary keys, unique constraint can be applied using unique together
+
+4. What is the difference between project and app?
+Ans: App is a module that deals with dedicated requirements in a project, whereas project covers entire app. Project can contain multiple apps.
+
+5. How to check version of Python, and Django installed
+Ans: django --version and python -V
+
+6. What is basic file structure of django project?
+project-abc/
+  manage.py
+  myproject/
+      __init__.py
+      settings.py
+      urls.py
+      wsgi.py
+
+7. 

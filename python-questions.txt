@@ -1,0 +1,46 @@
+1. What is the difference between append and extend?
+.append() adds a single object to the end of the list. .extend() adds each value from another list or list of values
+
+2. Do python lists store values or pointers?
+Python lists don’t store values themselves. They store pointers to values stored elsewhere in memory. This allows lists to be mutable.
+
+3. How to iterate multiple lists together?
+You can zip() lists and then iterate over the zip object. A zip object is an iterator of tuples.
+
+4. Is List Mutable or Not and Why?
+Yes it is mutable, as value is associated with the same identifier in memory and does not change.
+
+5. Can we mix different types of Objects in a List?
+Yes
+
+6. Does Python list store values or pointers in memory?
+It does not store values and stoer pointers to the values in memory. Because list is mutable.
+
+7. What is difference between remove() and pop() funciton of list?
+.remove() removes the element by value where as .pop() removes with index. by default .pop() removes last element
+
+8. How we can remove duplicates from list?
+Converting to a set and then converting back to a list, this will change order of items in list
+
+9. Can we get total number of times a vale is duplicate in a list?
+Yes we can use .count() and pass value as argument to get its count in list
+
+10. What is shallow copy of a list?
+As list is mutable, if we have to create a exact copy in memory we use .copy() method, this creates a shallow copy and change value in one will not effect value in another
+
+11. What is deep copy?
+If we have a list of lists deep copy will create a separate copy in memory for inner lists as well, where as shallow copy will not
+
+12. What is the difference between list, tuple and set?
+Lists can be modified after creation, whereas tuple cannot be modified. And to modify a tuple we have to create a new tuple from it. List is ordered, set is not ordered and also set does not allow duplicate.
+
+13. How can i mutliply every element in a list by 5?
+We can use map function to execute multiply operation on each number in list, also lamda function with map can be used or a separate multiply function with map
+
+14. Return every 2nd element in a list between 3 and 9?
+
+li = [1,2,3,4,5,6,7,8,9,10]
+
+li[10:16:2]
+
+Output: [11, 13, 15]
